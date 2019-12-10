@@ -22,7 +22,7 @@ namespace KK.AspNetCore.EasyAuthAuthentication
                 CreateClaims(claimsPayload),
                 AuthenticationTypesNames.Federation,
                 options.NameClaimType,
-                options.RoleClaimType
+                ClaimTypes.Role
             );
 
             AddScopeClaim(identity);
